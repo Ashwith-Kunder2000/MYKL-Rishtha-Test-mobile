@@ -87,6 +87,12 @@ exports.verifyOtp = async (req, res) => {
 
 exports.crashMe = (req, res) => {
   console.log(`Crashing worker ${process.pid}`);
+  console.log(`Crashing test`);
   process.exit(1);
 };
 //TESTING
+
+exports.TESTING = (req, res) => {
+  console.log(`Crashing worker ${process.pid}`);
+  process.exit(1);
+};
